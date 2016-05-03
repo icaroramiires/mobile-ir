@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<style>
+.centered {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+</style>
+</h:head>
+
+<h:body>
+	<!--  ==================================== PAGE RESULTADO =========================================-->
+
+	<pm:page id="page-login" style="background: white">
+		<pm:header title="Sucesso">
+			<p:commandButton action="inicio.ifba"  value="sair"
+				icon="ui-icon-arrow-r" styleClass="ui-btn-right ui-btn-inline" />
+		</pm:header>
+		<pm:content>
+			<p:panel header="Solicitação realizada com sucesso!!!">
+				<h:outputText
+					value="Aguarde a resposta do coordenador do seu curso" />
+			</p:panel>
+		</pm:content>
+	</pm:page>
+</h:body>
+
+</html>

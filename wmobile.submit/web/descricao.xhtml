@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<style>
+.centered {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+</style>
+</h:head>
+
+<h:body>
+
+	<!--  ==================================== PAGE DESCRICAO  =========================================-->
+	<pm:page id="page-descricao" style="background: white">
+		<pm:header title="THE SUBMIT">
+			<p:commandButton action="areas.ifba" value="Voltar"
+				icon="ui-icon-arrow-l" styleClass="ui-btn-left ui-btn-inline" />
+		</pm:header>
+		<pm:content>
+			<h:form id="form-descricao">
+				<pm:field>
+					<p:inputText value="#{projeto.titulo}" placeholder="Titulo" />
+					<p:inputTextarea id="textarea" value="#{projeto.descricao}"
+						placeholder="Descrição do Projeto" />
+				</pm:field>
+				<p:commandButton value="Submeter" onclick="PF('confirm').show();" />
+				<p:dialog header="Sucesso" widgetVar="confirm"
+					showEffect="slidedown">
+					<h:outputText value="#{projeto.resultado}" />
+					<p:commandButton action="resultado.ifba" value="OK"
+						onclick="PF('confirm').hide();">
+					</p:commandButton>
+				</p:dialog>
+			</h:form>
+		</pm:content>
+	</pm:page>
+
+</h:body>
+
+</html>

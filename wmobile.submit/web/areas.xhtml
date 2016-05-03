@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<style>
+.centered {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+</style>
+</h:head>
+
+<h:body>
+
+	<!--  ==================================== PAGE AREAS      =========================================-->
+
+	<pm:page id="page-areas">
+
+		<pm:header title="Selecione Uma Area">
+			<p:commandButton action="inicio.ifba"  value="sair"
+				icon="ui-icon-arrow-r" styleClass="ui-btn-right ui-btn-inline" />
+		</pm:header>
+		<pm:content>
+			<h:form id="form-areas">
+
+				<p:dataList id="data-list-areas" value="#{projeto.areaProjeto}"
+					var="area">
+					<p:commandLink value="#{area}" action="descricao.ifba">
+						<f:setPropertyActionListener target="#{projeto.areaEscolhida}"
+							value="#{area}">
+						</f:setPropertyActionListener>
+					</p:commandLink>
+				</p:dataList>
+
+			</h:form>
+
+		</pm:content>
+
+	</pm:page>
+</h:body>
+
+</html>

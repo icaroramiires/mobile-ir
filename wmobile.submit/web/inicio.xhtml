@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+
+<h:head>
+	<script name="jquery/jquery.js" library="primefaces"></script>
+	<style>
+.centered {
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+</style>
+</h:head>
+
+<h:body>
+	<!--  ==================================== PAGE LOGIN  =========================================-->
+
+	<pm:page id="page-login" style="background: white">
+		<pm:header title="THE SUBMIT" />
+		<pm:content>
+
+			<p:graphicImage styleClass="centered" url="/images/logoSubmit.png" />
+			<!--  exibe a logomarca -->
+
+			<h:form id="form-login">
+				<p:inputText value="#{projeto.email}" placeholder="email ou nome" />
+				<p:inputText type="password" value="#{projeto.senha}"
+					placeholder="senha" />
+				<p:commandButton action="areas.ifba"  value="Acessar" />
+			</h:form>
+
+		</pm:content>
+	</pm:page>
+</h:body>
+
+</html>

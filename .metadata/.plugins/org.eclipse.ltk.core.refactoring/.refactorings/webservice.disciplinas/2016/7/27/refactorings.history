@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Disciplina.java&apos; to &apos;webservice.disciplinas.client/src/br.edu.ifba.webservice.disciplinas.client&apos;&#x0A;- Original project: &apos;webservice.disciplinas&apos;&#x0A;- Destination element: &apos;webservice.disciplinas.client/src/br.edu.ifba.webservice.disciplinas.client&apos;&#x0A;- Original element: &apos;br.edu.ifba.mobile.webservice.disciplinas.Disciplina.java&apos;" description="Copy compilation unit" destination="=webservice.disciplinas.client/src&lt;br.edu.ifba.webservice.disciplinas.client" element1="/src&lt;br.edu.ifba.mobile.webservice.disciplinas{Disciplina.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1467419041201" units="1" version="1.0"/>
+</session>

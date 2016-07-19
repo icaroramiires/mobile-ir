@@ -1,0 +1,16 @@
+127.0.0.1 - - [01/Jul/2016:20:51:43 -0300] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [01/Jul/2016:20:51:46 -0300] "GET /webservice.disciplinas/ HTTP/1.1" 404 1040
+127.0.0.1 - - [01/Jul/2016:20:51:52 -0300] "GET /webservice.disciplinas/v1/ws HTTP/1.1" 404 -
+127.0.0.1 - - [01/Jul/2016:20:51:55 -0300] "GET /webservice.disciplinas/v1/ws/ HTTP/1.1" 404 -
+127.0.0.1 - - [01/Jul/2016:20:52:00 -0300] "GET /webservice.disciplinas/v1/ws/disciplinas HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [01/Jul/2016:21:04:13 -0300] "GET /webservice.disciplinas/v1/servico/revisar/ HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [01/Jul/2016:21:04:21 -0300] "GET /webservice.disciplinas/v1/servico/disciplinas/10 HTTP/1.1" 200 140
+0:0:0:0:0:0:0:1 - - [01/Jul/2016:21:08:21 -0300] "GET /webservice.disciplinas/v1/servico/versao HTTP/1.1" 200 13
+127.0.0.1 - - [01/Jul/2016:21:16:42 -0300] "GET /webservice.disciplinas/v1/servico/versao HTTP/1.1" 200 13
+127.0.0.1 - - [01/Jul/2016:21:42:41 -0300] "GET /webservice.disciplinas/v1/servico/versao HTTP/1.1" 200 13
+127.0.0.1 - - [01/Jul/2016:21:42:41 -0300] "GET /webservice.disciplinas/v1/disciplinas/1234567 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [01/Jul/2016:21:42:57 -0300] "GET /webservice.disciplinas/v1/servico/disciplinas/10 HTTP/1.1" 200 140
+127.0.0.1 - - [01/Jul/2016:21:43:25 -0300] "GET /webservice.disciplinas/v1/servico/versao HTTP/1.1" 200 13
+127.0.0.1 - - [01/Jul/2016:21:43:25 -0300] "GET /webservice.disciplinas/v1/servico/disciplinas/1234567 HTTP/1.1" 200 140
+127.0.0.1 - - [01/Jul/2016:21:43:55 -0300] "GET /webservice.disciplinas/v1/servico/versao HTTP/1.1" 200 13
+127.0.0.1 - - [01/Jul/2016:21:43:55 -0300] "GET /webservice.disciplinas/v1/servico/disciplinas/1234567 HTTP/1.1" 200 140
